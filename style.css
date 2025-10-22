@@ -104,6 +104,34 @@ select {
     align-items: center;
 }
 
+.titleOne{
+  font-size: 64px;
+  line-height: 76px;
+  font-weight: 600;
+  color: var(--darkGreyColor);
+}
+.subTitleOne{
+  font-size: 36px;
+  color: var(--darkGreyColor);
+  line-height: 44px;
+  font-weight: 600;
+}
+
+
+.btnPrimary{
+  background-color: var(--brandColorPrimary);
+  padding: 14px 32px;
+  border: 1px solid var(--brandColorPrimary);
+  border-radius: 4px;
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.btnPrimary:hover,
 .btnNavBar:hover
 {
   background-color: var(--brandColorSecondary);
@@ -120,6 +148,14 @@ select {
   display: inline-block;
   transition: 0.4s;
 }
+.commonParaGraphOne, 
+.navMenu,
+.counterTitleNames{
+  font-size: 16px;
+  color: var(--greyColor);
+  line-height: 24px;
+}
+
 
 
 /* common css end */
@@ -174,3 +210,74 @@ menu ul li a:hover{
 }
 
 /*Nav Css End */
+/* Hero Section Start */
+.heroSection{
+  justify-content: space-between;
+  gap: 104px;
+
+}
+#heroTextContentSection h1 span{
+  color: var(--brandColorPrimary);
+  display: block;
+
+}
+#heroTextContentSection p{
+  margin: 16px 0 32px;
+}
+.sliderBtn{
+  margin: auto;
+  gap: 8px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.sliderBtn div{
+  background-color: var(--brandColorPrimary);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+.sliderBtn div:hover{
+  background-color: var(--hoverOpacityBrandColorPrimary);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.sliderBtn .deActive{
+  background-color: var(--hoverOpacityBrandColorPrimary);
+} 
+/* Hero Section Start */
+/* Clients Section Start */
+#clientSection{
+  text-align: center;
+  padding: 40px 0 40px;
+}
+#clientSection p{
+  margin: 8px 0 16px;
+}
+.clientLogoSsection{
+  justify-content: space-between;
+  padding: 25px 0 25px;
+}
+.clientLogoSection div:nth-child(2),
+.clientLogoSection div:nth-child(3),
+.clientLogoSection div:nth-child(4),
+.clientLogoSection div:nth-child(5),
+.clientLogoSection div:nth-child(6)
+{ 
+  margin: 0 68px;
+}
+
+.clientLogoSection div:nth-child(1)
+{ 
+  margin-right: 68px;
+}
+.clientLogoSection div:nth-child(7)
+{ 
+  margin-left: 68px;
+}
+
+/* Clients Section End */
